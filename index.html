@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="sytles.css" />
     <!-- conecta a um arquivo CSS -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- conecta a um arquivo icone -->
@@ -13,58 +13,45 @@
   <body>
     <nav class="menu">
       <ul>
-        <li><a href="">Página inicial</a></li>
-        <li><a href="">Loja</a></li>
+        <li><a href="index.html">Página inicial</a></li>
+        <li class="dropdown">
+          <a href="loja.html" class="dropbtn">Loja</a>
+          <ul class="dropdown-content">
+            <li><a href="#M4">M4</a></li>
+            <li><a href="#MG42">MG42</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <br />
-    <header>
-      <div class="pai">
-        <div class="filho1">
-          <img class="img" src="images/logo.png" alt="" />
-        </div>
-        <div class="filho2">
-          <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </h6>
-        </div>
-      </div>
-    </header>
-    <br />
-    <hr />
     <!-- tag pra pular linha -->
     <iframe
       width="10"
-      height="20"
+      height="10"
       src="https://www.myinstants.com/instant/punch-sound-86161/embed/"
       frameborder="0"
       scrolling="no"
     ></iframe>
     <iframe
       width="10"
-      height="20"
+      height="10"
       src="https://www.myinstants.com/instant/tuco-get-out-30566/embed/"
       frameborder="0"
       scrolling="no"
     ></iframe>
     <br />
     <hr />
+    <p>O objetivo ou tema deste site é sobre</p>
     <h1>Armas :D</h1>
-    <br />
+    <p>Aqui você irá encontrar diversos tipos de armas, tais como:</p>
     <main>
       <article>
         <section>
           <div class="branca">
             <h1>Armas brancas</h1>
             <iframe
-              width="560"
-              height="315"
+              width="310"
+              height="259"
               src="https://www.youtube.com/embed/U5A9s2OkkkQ?si=pOC9NOaimRY2JsEj"
               title="YouTube video player"
               frameborder="0"
@@ -81,7 +68,6 @@
         </section>
       </article>
     </main>
-    <br />
     <a href="https://www.youtube.com/watch?v=zewpJCDPP-c"
       >clique aqui para ver um exemplo</a
     >
@@ -89,8 +75,8 @@
     <footer>
       <nav class="menu">
         <ul>
-          <li><a href="">Contatos</a></li>
-          <li><a href="">Sobre nós</a></li>
+          <li><a href="contato.html">Contatos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
         </ul>
       </nav>
     </footer>
