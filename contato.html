@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sytles.css" />
     <!-- conecta a um arquivo CSS -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- conecta a um arquivo icone -->
     <title>putz grila</title>
-</head>
-<!-- código pra arrumar automaticamente: Shift + Alt + F -->
-<body>
-    <nav class="menu">
+  </head>
+  <!-- código pra arrumar automaticamente: Shift + Alt + F -->
+  <body>
+    <header>
+      <nav class="menu">
         <ul>
           <li><a href="index.html">Página inicial</a></li>
           <li class="dropdown">
             <a href="loja.html" class="dropbtn">Loja</a>
             <ul class="dropdown-content">
-              <li><a href="#M4">M4</a></li>
-              <li><a href="#MG42">MG42</a></li>
+              <li><a href="loja.html">M4</a></li>
+              <li><a href="loja.html">MG42</a></li>
+              <li><a href="loja.html">Magnum 357</a></li>
             </ul>
           </li>
         </ul>
       </nav>
-      <footer>
-        <nav class="menu">
-          <ul>
-            <li><a href="contato.html">Contatos</a></li>
-            <li><a href="sobre.html">Sobre nós</a></li>
-          </ul>
-        </nav>
-      </footer>
-</body>
+    </header>
+    <br>
+    <!-- Container principal do slider -->
+    <div class="slider">
+      <!-- Container que agrupa todos os slides -->
+      <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img src="images/joke.png" alt="Banner 1" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="images/batuma.png" alt="Banner 2" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="images/joke2.png" alt="Banner 3" />
+        </div>
+      </div>
+    </div>
+    <br>
+    <footer>
+      <nav class="menu">
+        <ul>
+          <li><a href="contato.html">Contatos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
