@@ -16,7 +16,7 @@ body {
   /* Faz com que o conteúdo principal ocupe o espaço disponível */
 }
 nav ul {
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   display: flex;
 }
@@ -49,31 +49,11 @@ p {
   text-align: center;
   font-family: monospace;
 }
-/* preciso dar uma melhorada nisto abaixo, pois não está centralizado no site*/
-.pai {
-  width: auto;
-  text-align: center;
-  padding: 0;
-}
-/* preciso dar uma melhorada nisto abaixo, pois não está centralizado no site*/
-.filho1 {
-  text-align: center;
-  width: fit-content;
-  flex: 1; /* Permite que os cards cresçam igualmente */
-  img {
-    width: 60%;
-    border-radius: 50px;
-  }
-  img:hover {
-    opacity: 0.4;
-  }
-}
 h3{
   text-align: center;
 }
 /* preciso dar uma melhorada nisto abaixo, pois não está centralizado no site*/
 article {
-  gap: 20px; /* Espaçamento entre os cards */
   width: auto;
   text-align: center;
   padding: 0;
@@ -143,13 +123,14 @@ nav ul li:hover .dropdown-content {
   margin: 0 auto; /* Centraliza o slider horizontalmente */
   overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites do container */
   position: relative; /* Posiciona o slider de forma relativa para posicionar elementos dentro dele, se necessário */
+  
 }
 
 /* Estilização do container das slides */
 .slides {
   display: flex; /* Alinha os slides em linha, horizontalmente */
   width: 200%; /* Largura do container de slides é 3 vezes a largura do slider para acomodar todos os slides */
-  animation: slideAnimation 10s infinite; /* Aplica a animação que movimenta os slides, com duração de x segundos e repetição infinita */
+  animation: slideAnimation 300s infinite; /* Aplica a animação que movimenta os slides, com duração de x segundos e repetição infinita */
 }
 
 /* Estilização individual de cada slide */
@@ -163,11 +144,8 @@ nav ul li:hover .dropdown-content {
   0% {
     transform: translateX(-2%);
   } /* Posição inicial do primeiro slide */
-  50% {
-    transform: translateX(-48%);
-  } /* Move para o segundo slide */
   100% {
-    transform: translateX(-2%);
+    transform: translateX(-48%);
   }
 }
 
@@ -228,6 +206,9 @@ nav ul li:hover .dropdown-content {
 button{
   background-color: rgb(190, 79, 79, 0.6);
   border-radius: 8px;
+  width: 100%;
+  height: 10%;
+  font-size: 30px;
 }
 button:hover{
   background-image: linear-gradient(
@@ -249,4 +230,20 @@ hr{
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
   flex: 1; /* Permite que os cards cresçam igualmente */
+}
+.ico{
+  width: 27.3px;
+}
+.img1 {
+  padding-right: 1%;
+  border-radius: 160px;
+  float: left;
+}
+.img1:hover{
+  opacity: 0.4;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
