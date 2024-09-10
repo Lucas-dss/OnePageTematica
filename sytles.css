@@ -49,7 +49,7 @@ p {
   text-align: center;
   font-family: monospace;
 }
-h3{
+h3 {
   text-align: center;
 }
 /* preciso dar uma melhorada nisto abaixo, pois não está centralizado no site*/
@@ -123,7 +123,6 @@ nav ul li:hover .dropdown-content {
   margin: 0 auto; /* Centraliza o slider horizontalmente */
   overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites do container */
   position: relative; /* Posiciona o slider de forma relativa para posicionar elementos dentro dele, se necessário */
-  
 }
 
 /* Estilização do container das slides */
@@ -172,22 +171,18 @@ nav ul li:hover .dropdown-content {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
   flex: 1; /* Permite que os cards cresçam igualmente */
 }
-.glock:hover {
-  height: 72%;
-  border-radius: 8px;
-}
 .m4:hover {
-  height: 55%;
+  height: 60%;
   border-radius: 8px;
 }
-.mp5:hover{
-  height: 51%;
+.mp5:hover {
+  height: 50%;
   border-radius: 8px;
 }
-.mg{
+.mg {
   height: 40%;
 }
-.mg:hover{
+.mg:hover {
   height: 45%;
   border-radius: 8px;
 }
@@ -203,24 +198,25 @@ nav ul li:hover .dropdown-content {
   font-size: 18px;
   color: #3e3d43;
 }
-button{
+button {
   background-color: rgb(190, 79, 79, 0.6);
   border-radius: 8px;
   width: 100%;
   height: 10%;
   font-size: 30px;
 }
-button:hover{
+button:hover {
   background-image: linear-gradient(
     to bottom right,
     rgb(244, 162, 243),
     rgb(125, 94, 239, 0.6)
   );
 }
-hr{
-  border: 8px double salmon
+hr {
+  border: 8px double salmon;
 }
-.perfil{
+.perfil {
+  margin: auto; /*coloca o container para o meio automaticamente*/
   gap: 5%; /* Espaçamento entre os cards */
   text-align: center;
   width: 50%;
@@ -231,7 +227,7 @@ hr{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
   flex: 1; /* Permite que os cards cresçam igualmente */
 }
-.ico{
+.ico {
   width: 27.3px;
 }
 .img1 {
@@ -239,11 +235,46 @@ hr{
   border-radius: 160px;
   float: left;
 }
-.img1:hover{
+.img1:hover {
   opacity: 0.4;
 }
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+/* container da galeria usando Flexbox */
+.galeria-container {
+  display: flex; /* Define o contêiner como um flexbox */
+  /*display: grid; /* Ativa o CSS grid */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+  /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+  justify-content: space-around;
+  gap: 10px;
+  padding: 20px;
+  width: 80%;
+}
+.galeria-container:hover .galeria-item{
+  opacity: .5;
+}
+.galeria-container .galeria-item:hover {
+  opacity: 1
+}
+/* cada item da galeria */
+.galeria-item {
+  margin: 10px;
+  border: 2px dotted #ffffff;
+  /*border-radius: 8px; /* Arredonda os cantos dos cards */
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  transition: all .3s;
+}
+.galeria-item:hover {
+  transform: translateY(-20px)
+}
+/* Estilos para as imagens */
+.galeria-item img{
+  width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+  height: auto; /* Mantém a proporção da imagem */
 }
