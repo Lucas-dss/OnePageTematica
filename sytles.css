@@ -63,6 +63,7 @@ article {
   display: inline-block;
   align-items: left;
   flex: 1; /* Permite que os cards cresçam igualmente */
+  transition: all 0.5s;
   iframe {
     float: left;
     border-radius: 40px;
@@ -71,11 +72,16 @@ article {
     opacity: 0.4;
   }
 }
+.branca:hover {
+  transition: all 0.5s;
+  transform: translateX(-10%);
+}
 .fogo {
   text-align: right;
   display: inline-block;
   align-items: right;
   flex: 1; /* Permite que os cards cresçam igualmente */
+  transition: all 0.5s;
   img {
     float: right;
     border-radius: 50px;
@@ -83,6 +89,10 @@ article {
   img:hover {
     opacity: 0.4;
   }
+}
+.fogo:hover {
+  transition: all 0.5s;
+  transform: translateX(10%);
 }
 nav ul li {
   position: relative;
@@ -129,7 +139,7 @@ nav ul li:hover .dropdown-content {
 .slides {
   display: flex; /* Alinha os slides em linha, horizontalmente */
   width: 200%; /* Largura do container de slides é 3 vezes a largura do slider para acomodar todos os slides */
-  animation: slideAnimation 300s infinite; /* Aplica a animação que movimenta os slides, com duração de x segundos e repetição infinita */
+  animation: slideAnimation 30s infinite; /* Aplica a animação que movimenta os slides, com duração de x segundos e repetição infinita */
 }
 
 /* Estilização individual de cada slide */
@@ -170,21 +180,22 @@ nav ul li:hover .dropdown-content {
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
   flex: 1; /* Permite que os cards cresçam igualmente */
+  transition: all 1s;
 }
-.m4:hover {
-  height: 60%;
-  border-radius: 8px;
+.card img {
+  transition: all 0.5s;
+  border-radius: 8px; /* Arredonda os cantos dos cards */
 }
-.mp5:hover {
-  height: 50%;
-  border-radius: 8px;
+.card img:hover {
+  transition: all 0.3s;
+  transform: translateY(-10%);
 }
-.mg {
-  height: 40%;
+.container:hover .card {
+  transition: all 1s;
+  opacity: 0.6;
 }
-.mg:hover {
-  height: 45%;
-  border-radius: 8px;
+.container .card:hover {
+  opacity: 1;
 }
 /* Estilo para o título dos cards */
 .card h2 {
@@ -254,11 +265,11 @@ hr {
   padding: 20px;
   width: 80%;
 }
-.galeria-container:hover .galeria-item{
-  opacity: .5;
+.galeria-container:hover .galeria-item {
+  opacity: 0.5;
 }
 .galeria-container .galeria-item:hover {
-  opacity: 1
+  opacity: 1;
 }
 /* cada item da galeria */
 .galeria-item {
@@ -268,13 +279,13 @@ hr {
   border-radius: 5px;
   overflow: hidden;
   width: 300px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .galeria-item:hover {
-  transform: translateY(-20px)
+  transform: translateY(-10%);
 }
 /* Estilos para as imagens */
-.galeria-item img{
+.galeria-item img {
   width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
   height: auto; /* Mantém a proporção da imagem */
 }
