@@ -94,9 +94,6 @@ hr {
   text-align: left;
   width: 60%;
 }
-.aaa{
-  margin: 0;
-}
 .btn-login {
   background-image: linear-gradient(rgb(255, 213, 213), rgb(202, 243, 251));
   border-radius: 16px;
@@ -107,7 +104,7 @@ footer {
   background-image: linear-gradient(
     to bottom right,
     rgb(244, 162, 243),
-    rgb(125, 94, 239, 0.6)
+    rgb(125, 94, 239)
   );
   color: #ffffff;
   padding: 0.5% 0;
@@ -137,6 +134,7 @@ footer {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  font-size: 14px;
 }
 .footer-section ul {
   list-style-type: none;
@@ -175,4 +173,8 @@ footer {
 }
 .footer-bottom p {
   margin: 0;
+}
+.a:hover{
+  color: darkorchid;
+  word-spacing: 10px;
 }
