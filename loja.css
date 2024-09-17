@@ -1,0 +1,59 @@
+/* Estilo para o contêiner principal */
+.container {
+  display: flex; /* Define o contêiner como um flexbox */
+  gap: 5%; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+  text-align: center;
+}
+
+/* Estilo para cada card */
+.card {
+  background-image: linear-gradient(rgb(190, 79, 79), rgb(250, 255, 250));
+  border: 3px dotted #ffffff;
+  border-radius: 8px; /* Arredonda os cantos dos cards */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+  flex: 1; /* Permite que os cards cresçam igualmente */
+  transition: all 1s;
+}
+.card img {
+  transition: all 0.5s;
+  border-radius: 8px; /* Arredonda os cantos dos cards */
+}
+.card img:hover {
+  transition: all 0.3s;
+  transform: translateY(-10%);
+}
+.container:hover .card {
+  transition: all 1s;
+  opacity: 0.6;
+}
+.container .card:hover {
+  opacity: 1;
+}
+/* Estilo para o título dos cards */
+.card h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #543667;
+}
+
+/* Estilo para o parágrafo dos cards */
+.card p {
+  font-size: 18px;
+  color: #3e3d43;
+}
+button {
+  background-color: rgb(190, 79, 79, 0.6);
+  border-radius: 8px;
+  width: 100%;
+  height: 10%;
+  font-size: 30px;
+}
+button:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(244, 162, 243),
+    rgb(125, 94, 239, 0.6)
+  );
+}

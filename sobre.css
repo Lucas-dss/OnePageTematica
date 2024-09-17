@@ -1,0 +1,25 @@
+.perfil {
+  margin: auto; /*coloca o container para o meio automaticamente*/
+  gap: 5%; /* Espaçamento entre os cards */
+  text-align: center;
+  width: 50%;
+  background-image: linear-gradient(rgb(228, 219, 173), rgb(250, 255, 250));
+  border: 5px ridge #ffffff;
+  border-radius: 8px; /* Arredonda os cantos dos cards */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+  flex: 1; /* Permite que os cards cresçam igualmente */
+}
+.img1 {
+  padding-right: 1%;
+  border-radius: 160px;
+  float: left;
+}
+.img1:hover {
+  opacity: 0.4;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
