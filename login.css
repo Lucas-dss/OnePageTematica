@@ -28,3 +28,8 @@
   );
   transition: color 1s;
 }
+.senha {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(250, 255, 250));
+  border-radius: 7px;
+  border: #ffffff;
+}

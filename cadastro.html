@@ -36,9 +36,7 @@
             </ul>
           </li>
           <li>
-            <a href="cadastro.html"
-              ><button class="btn-login">Cadastro</button></a
-            >
+            <a href="login.html"><button class="btn-login">Login</button></a>
           </li>
         </ul>
       </nav>
@@ -51,18 +49,33 @@
       <center>
         <a href="index.html"><img src="images/favicon.ico" alt="" /></a>
       </center>
-      <h2>Login</h2>
+      <h2>Cadastro</h2>
       <form action="login.html" method="post">
         <!-- Campo de Nome de Usuário -->
-        <label for="username">Nome de Usuário ou E-mail: </label>
+        <label for="nome">Nome Completo: </label>
+        <br />
+        <input type="text" id="nome" name="nome" class="senha" required />
+        <hr class="rs" />
+        <!-- Campo de Email -->
+        <label for="email">E-mail: </label>
+        <br />
+        <input type="email" id="email" name="email" class="senha" required />
+        <hr class="rs" />
+        <!-- Campo de Telefone -->
+        <label for="telefone">Telefone: </label>
         <br />
         <input
-          type="text"
-          id="username"
-          name="username"
+          type="tel"
+          id="telefone"
+          name="telefone"
           class="senha"
           required
         />
+        <hr class="rs" />
+        <!-- Campo de Data de Nascimento -->
+        <label for="data">Data de Nascimento: </label>
+        <br />
+        <input type="date" id="data" name="data" class="senha" required />
         <hr class="rs" />
         <!-- Campo de Senha -->
         <label for="senha">Senha: </label>
@@ -74,11 +87,11 @@
         <input type="password" id="senha" name="senha" class="senha" required />
         <hr class="rs" />
         <!-- Botão de envio de formulário -->
-        <button type="submit" class="btn-login">Entrar</button>
+        <button type="submit" class="btn-login">Cadastrar</button>
 
         <p>
-          Não tem uma conta?
-          <a href="cadastro.html" class="a">Cadastre-se</a>
+          Já tem uma conta?
+          <a href="login.html" class="a">Logar-se</a>
         </p>
       </form>
     </div>
