@@ -26,7 +26,7 @@
     rgb(244, 162, 243),
     rgb(125, 94, 239, 0.6)
   );
-  transition: color 1s;
+  color: #ffffff;
 }
 .senha {
   background-image: linear-gradient(rgb(255, 255, 255), rgb(250, 255, 250));

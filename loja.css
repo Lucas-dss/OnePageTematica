@@ -57,9 +57,47 @@ button:hover {
     rgb(244, 162, 243),
     rgb(125, 94, 239, 0.6)
   );
+  color: #fff;
 }
-.card .risk{
+.card .risk {
   text-decoration: line-through;
   font-size: 15px;
   margin: 0;
+}
+.pagination {
+  text-align: center;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-image 1s;
+  border: 1px solid #ddd;
+}
+
+.pagination .ss:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(244, 162, 243),
+    rgb(125, 94, 239, 0.6)
+  );
+  color: #fff;
+}
+.center {
+  text-align: center;
+}
+.fg:hover{
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 115, 0),
+    rgb(191, 255, 0)
+  );
+  color: #fff;
+}
+.br:hover{
+  color: #fff;
 }

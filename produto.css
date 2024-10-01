@@ -1,6 +1,5 @@
 /* Aplica margens e padding zerados para todos os elementos e define o box-sizing */
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -17,7 +16,7 @@ body {
 .produto {
   display: flex; /* Usa o flexbox para organizar o layout */
   justify-content: space-around; /* Distribui o espaço entre os elementos */
-  background-color: #fff; /* Cor de fundo branco */
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(239, 211, 193));
   padding: 20px; /* Espaçamento interno */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do elemento */
@@ -34,6 +33,7 @@ body {
   max-width: 400px; /* Define um tamanho máximo para a imagem */
   margin-bottom: 10px; /* Espaçamento inferior */
   margin-left: 1%;
+  border-radius: 25px;
 }
 
 /* Estiliza as miniaturas das imagens */
@@ -41,6 +41,11 @@ body {
   width: 70px; /* Largura fixa das miniaturas */
   margin-right: 10px; /* Espaçamento entre as miniaturas */
   cursor: pointer; /* O cursor muda para pointer ao passar sobre as miniaturas */
+  border-radius: 25px;
+}
+
+.miniaturas img:hover {
+  opacity: 50%;
 }
 
 /* Estiliza a div que contém os detalhes do produto */
@@ -64,6 +69,7 @@ h2 {
 
 /* Estiliza o preço do produto */
 .preco {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
   border: dashed;
   color: rgb(239, 84, 177);
   font-size: 24px; /* Tamanho maior para destacar */
@@ -89,7 +95,7 @@ select {
   padding: 8px; /* Espaçamento interno */
   margin-bottom: 15px; /* Espaçamento inferior */
   border-radius: 5px; /* Bordas arredondadas */
-  border: 1px solid #ddd; /* Borda cinza clara */
+  border: 1px solid #949494; /* Borda cinza clara */
 }
 
 /* Estiliza o botão de compra */
@@ -123,7 +129,11 @@ button:hover {
 .comentario {
   display: flex; /* Exibe a foto e o texto lado a lado */
   align-items: center; /* Alinha a foto e o texto verticalmente */
-  background-color: #fff; /* Fundo branco */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 255),
+    rgb(230, 226, 240)
+  );
   padding: 15px; /* Espaçamento interno */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do comentário */
