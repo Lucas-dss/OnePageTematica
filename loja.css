@@ -36,6 +36,7 @@
   margin-top: 0;
   font-size: 1.5em;
   color: #543667;
+  margin: 0;
 }
 
 /* Estilo para o parágrafo dos cards */
@@ -57,6 +58,8 @@ button:hover {
     rgb(125, 94, 239, 0.6)
   );
 }
-.card .pz{
-  font-size: 5px;
+.card .risk{
+  text-decoration: line-through;
+  font-size: 15px;
+  margin: 0;
 }
