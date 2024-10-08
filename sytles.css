@@ -15,10 +15,6 @@ body {
   flex: 1;
   /* Faz com que o conteúdo principal ocupe o espaço disponível */
 }
-nav ul {
-  justify-content: space-around;
-  display: flex;
-}
 .menu {
   position: fixed;
   top: 0;
@@ -41,7 +37,7 @@ li {
   margin: 150px;
 }
 li:hover {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 h1 {
   text-align: center;
@@ -55,14 +51,15 @@ h3 {
   text-align: center;
 }
 nav ul li {
+  float: right;
   position: relative;
   margin: 0 15px;
 }
 nav ul li a {
   text-decoration: none;
-  padding: 10px;
   display: block;
-  transition: color 100s;
+  text-align: center;
+  padding: 14px 16px;
 }
 nav ul li .dropdown-content {
   display: none;
@@ -93,14 +90,32 @@ hr {
   border: 8px double salmon;
 }
 .ico {
-  text-align: left;
-  width: 60%;
+  margin-left: 200px;
+  width: 29px;
+}
+.ico1 {
+  margin-right: 100px;
+  width: 28px;
+  border: 2px dashed rgb(125, 94, 239);
+  border-radius: 5px;
+  background-image: linear-gradient(rgb(255, 213, 213), rgb(202, 243, 251));
 }
 .btn-login {
   background-image: linear-gradient(rgb(255, 213, 213), rgb(202, 243, 251));
   border-radius: 16px;
   width: 100%;
   font-size: 25px;
+  transition: 1s;
+  opacity: 1;
+}
+.btn-login:hover{
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(244, 162, 243),
+    rgb(125, 94, 239, 0.6)
+  );
+  color: #fff;
+  opacity: 1;
 }
 footer {
   background-image: linear-gradient(
@@ -175,6 +190,9 @@ footer {
 }
 .footer-bottom p {
   margin: 0;
+}
+.a{
+  transition: 1s;
 }
 .a:hover{
   color: darkorchid;

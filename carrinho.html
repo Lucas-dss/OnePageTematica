@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sytles.css" />
     <!-- conecta a um arquivo CSS -->
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="carrinho.css" />
     <!-- conecta a um arquivo CSS -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- conecta a um arquivo icone -->
@@ -32,15 +32,15 @@
             </a>
           </li>
           <li>
-            <a href="cadastro.html"><button class="btn-login">Cadastro</button></a>
+            <a href="login.html"><button class="btn-login">Login</button></a>
           </li>
           <li class="dropdown">
             <a href="loja.html" class="dropbtn">Loja</a>
             <ul class="dropdown-content">
-              <li style="float: unset"><a href="loja.html">Pistolas</a></li>
-              <li style="float: unset"><a href="loja.html">Fuzis</a></li>
-              <li style="float: unset"><a href="loja.html">Espingardas</a></li>
-              <li style="float: unset"><a href="loja.html">Submetralhadoras</a></li>
+              <li><a href="loja.html">Pistolas</a></li>
+              <li><a href="loja.html">Fuzis</a></li>
+              <li><a href="loja.html">Espingardas</a></li>
+              <li><a href="loja.html">Submetralhadoras</a></li>
             </ul>
           </li>
         </ul>
@@ -50,41 +50,60 @@
     <br />
     <br />
     <br />
-    <div class="container-login">
-      <center>
-        <a href="index.html"><img src="images/favicon.ico" alt="" /></a>
-      </center>
-      <h2>Login</h2>
-      <form action="login.html" method="post">
-        <!-- Campo de Nome de Usuário -->
-        <label for="username">Nome de Usuário ou E-mail: </label>
-        <br />
-        <input
-          type="text"
-          id="username"
-          name="username"
-          class="senha"
-          required
-        />
-        <hr class="rs" />
-        <!-- Campo de Senha -->
-        <label for="senha">Senha: </label>
-        <br />
-        <input type="password" id="senha" name="senha" class="senha" required />
-        <hr class="rs" />
-        <label for="senha">Confimar Senha: </label>
-        <br />
-        <input type="password" id="senha" name="senha" class="senha" required />
-        <hr class="rs" />
-        <!-- Botão de envio de formulário -->
-        <button type="submit" class="btn-login">Entrar</button>
-
-        <p>
-          Não tem uma conta?
-          <a href="cadastro.html" class="a">Cadastre-se</a>
-        </p>
-      </form>
-    </div>
+    <!-- Conteúdo principal da página -->
+    <main>
+      <!-- Seção do carrinho -->
+      <section class="carrinho">
+        <!-- Tabela de produtos no carrinho -->
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Quantidade</th>
+              <th>Preço Unitário</th>
+              <th>Total</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Produto 1 -->
+            <tr>
+              <td>Armas de Fogo</td>
+              <td>
+                <input
+                  type="number"
+                  value="1"
+                  min="1"
+                  max="12"
+                  class="quantidade"
+                />
+              </td>
+              <td class="preco-unitario">R$ 10599,99</td>
+              <td class="preco-total">R$ 10599,99</td>
+              <td>
+                <button class="remover-produto">Remover</button>
+              </td>
+            </tr>
+            <!-- Produto 2 -->
+            <tr>
+              <td>Armas Brancas</td>
+              <td>
+                <input type="number" value="2" min="1" max="12" class="quantidade" />
+              </td>
+              <td class="preco-unitario">R$ 5000,00</td>
+              <td class="preco-total">R$ 10000,00</td>
+              <td>
+                <button class="remover-produto">Remover</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Exibição do total final -->
+        <div class="total-final">
+          <h3>Total Final: <span id="total-final">R$ 110,00</span></h3>
+        </div>
+      </section>
+    </main>
     <br />
     <footer>
       <div class="container-footer">
@@ -102,7 +121,6 @@
           <h4>Links Rapidos</h4>
           <ul>
             <li><a href="index.html">Página principal</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="loja.html">Loja</a></li>
             <li><a href="fotos.html">Galeria</a></li>
@@ -150,5 +168,7 @@
         <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
       </div>
     </footer>
+    <!-- Adiciona o script para interatividade -->
+    <script src="carrinho.js"></script>
   </body>
 </html>

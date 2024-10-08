@@ -9,7 +9,7 @@ article {
   display: inline-block;
   align-items: left;
   flex: 1; /* Permite que os cards cresçam igualmente */
-  transition: all 0.5s;
+  transition: all 1s;
   iframe {
     float: left;
     border-radius: 40px;
@@ -19,7 +19,6 @@ article {
   }
 }
 .branca:hover {
-  transition: all 0.5s;
   transform: translateX(-10%);
 }
 .fogo {
@@ -27,7 +26,7 @@ article {
   display: inline-block;
   align-items: right;
   flex: 1; /* Permite que os cards cresçam igualmente */
-  transition: all 0.5s;
+  transition: all 1s;
   img {
     float: right;
     border-radius: 50px;
@@ -37,7 +36,6 @@ article {
   }
 }
 .fogo:hover {
-  transition: all 0.5s;
   transform: translateX(10%);
 }
 /* Estilização do container do slider */
