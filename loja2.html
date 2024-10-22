@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sytles.css" />
     <!-- conecta a um arquivo CSS -->
-    <link rel="stylesheet" href="sobre.css" />
+    <link rel="stylesheet" href="loja.css" />
     <!-- conecta a um arquivo CSS -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- conecta a um arquivo icone -->
@@ -18,88 +18,390 @@
   </head>
   <!-- código pra arrumar automaticamente: Shift + Alt + F -->
   <body>
+    <!-- cabeçário -->
     <header>
       <nav class="menu">
         <ul>
+          <!-- ícone da marca do site -->
           <li style="float: left">
             <a href="index.html"
               ><img src="images/favicon.ico" alt="" class="ico" /> Pay2Play
             </a>
           </li>
+          <!-- carrinho -->
           <li>
             <a href="carrinho.html"
               ><img src="images/carrinho.ico" alt="" class="ico1" />
             </a>
           </li>
+          <!-- login -->
           <li>
             <a href="login.html"><button class="btn-login">Login</button></a>
           </li>
+          <!-- loja do site * need to adjust this * -->
           <li class="dropdown">
             <a href="loja.html" class="dropbtn">Loja</a>
             <ul class="dropdown-content">
-              <li style="float: unset"><a href="loja.html">Pistolas</a></li>
-              <li style="float: unset"><a href="loja.html">Fuzis</a></li>
-              <li style="float: unset"><a href="loja.html">Espingardas</a></li>
-              <li style="float: unset">
-                <a href="loja.html">Submetralhadoras</a>
-              </li>
+              <li style="float: unset"><a href="#1">Ação</a></li>
+              <li style="float: unset"><a href="#2">Indie</a></li>
+              <li style="float: unset"><a href="#3">RPG</a></li>
+              <li style="float: unset"><a href="#4">Terror</a></li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
+    <br id="1" />
     <br />
     <br />
     <br />
-    <br />
-    <div class="clearfix">
-      <img id="myImg" src="images/logo.png" alt="" height="300" />
-
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01" />
-        <div id="caption"></div>
-      </div>
-
-      <script src="sobre.js"></script>
-
-      <h1>Na Pay2Play, acreditamos que o jogo e a diversão podem andar de mãos
-      dadas. Nossa jornada começou em 2024, onde e quando percebemos a
-      necessidade de um consumo mais consciente. Decidimos criar uma marca que
-      oferecesse materiais de jogos e de alta qualidade, vendidas de forma ética
-      e responsável.</h1>
-    </div>
-    <br />
-    <h1>Nossa equipe</h1>
-    <br />
-    <div class="pai">
-      <div class="perfil">
-        <img src="images/favicon.ico" class="ico" />
-        <h2>Lucas</h2>
+    <!-- 1° TÓPICO -->
+    <div class="container">
+      <!-- Cada div com a classe "card" será um card individual -->
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/oyZY_BiTmd8?si=qeQIsOm49_m8LOrG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Call of Duty</h2>
         <p>
-          Bom dia, boa tarde, boa noite. Eu sou o criador desse site maldito,
-          fiz sozinho por ser este o objetivo. Enfim, dê uma visita nas outras
-          páginas e vê se encontra algo incrível e tals.
+          Uma das franquias mais populares do gênero, com campanhas emocionantes
+          e modos multiplayer competitivos.
         </p>
-        <h2>Owner</h2>
+        <p class="risk">R$ 330,99</p>
+        <h2>R$ 290,99</h2>
+        <p>em 2x R$ 145,49</p>
+        <a href="glock.html"><button>Compre agora</button></a>
+      </div>
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/RO90omga8D4?si=DVJpePCn4_VeHPk6"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Doom</h2>
+        <p>
+          Clássico dos shooters, conhecido por sua violência frenética e trilha
+          sonora icônica.
+        </p>
+        <p class="risk">R$ 180,99</p>
+        <h2>R$ 150,99</h2>
+        <p>em 2x R$ 75,49</p>
+        <a href="colt.html"><button>Compre agora</button></a>
+      </div>
+      <!-- Você pode adicionar quantos cards quiser -->
+    </div>
+    <div class="container">
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/eOfzFFMfzdM?si=-G28InEnCE68ocXo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>The Last of Us</h2>
+        <p>
+          Uma narrativa emocionante ambientada em um mundo pós-apocalíptico, com
+          combate tático e personagens memoráveis.
+        </p>
+        <p class="risk">R$ 342,99</p>
+        <h2>R$ 290,99</h2>
+        <p>em 2x R$ 145,49</p>
+        <a href="magnum.html"><button>Compre agora</button></a>
+      </div>
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/uHIbVvFTSYU?si=WKiEkd6cQlR8FLw8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Gears of War</h2>
+        <p>
+          Uma franquia conhecida por sua jogabilidade frenética e visuais
+          impressionantes, com combates contra hordas de inimigos.
+        </p>
+        <p class="risk">R$ 100,99</p>
+        <h2>R$ 80,99</h2>
+        <p>em 2x R$ 40,49</p>
+        <a href="magnum.html"><button>Compre agora</button></a>
+      </div>
+    </div>
+    <!-- 2° TÓPICO -->
+    <hr id="2" />
+    <div class="container">
+      <!-- Cada div com a classe "card" será um card individual -->
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/ibDx3ueg90U?si=nS_-wzaoQdysAz-X"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Cuphead</h2>
+        <p>
+          Um jogo de plataforma com gráficos pintados à mão e uma trilha sonora
+          jazzística, inspirado em desenhos animados dos anos 30.
+        </p>
+        <p class="risk">R$ 40,99</p>
+        <h2>R$ 36,99</h2>
+        <p>em 2x R$ 18,49</p>
+        <a href="ak.html"><button>Compre agora</button></a>
+      </div>
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/UAO2urG23S4?si=lKS1LYKMPXYmdBHr"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Hollow Knight</h2>
+        <p>
+          Um metroidvania 2D com um mundo rico e desafiador, explorando temas
+          como a solidão e a perseverança.
+        </p>
+        <p class="risk">R$ 50,99</p>
+        <h2>R$ 46,99</h2>
+        <p>em 2x R$ 23,49</p>
+        <a href="m4.html"><button>Compre agora</button></a>
+      </div>
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/1Hojv0m3TqA?si=4voJQ84wyIn-7CCb"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Undertale</h2>
+        <p>
+          Um RPG com uma narrativa cativante e a possibilidade de resolver
+          conflitos sem violência.
+        </p>
+        <p class="risk">R$ 23,99</p>
+        <h2>R$ 19,99</h2>
+        <p>em 2x R$ 9,49</p>
+        <a href="reming7.html"><button>Compre agora</button></a>
+      </div>
+    </div>
+    <!-- 3° TÓPICO -->
+    <hr id="3" />
+    <div class="container">
+      <!-- Cada div com a classe "card" será um card individual -->
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/xx8kQ4s5hCY?si=WbjG5uHlP5a4oJFd"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>The Witcher 3: Wild Hunt</h2>
+        <p>
+          Um RPG de mundo aberto com uma história rica e combates desafiadores.
+        </p>
+        <p class="risk">R$ 50,99</p>
+        <h2>R$ 30,99</h2>
+        <p>em 2x R$ 15,49</p>
+        <a href="reming8.html"><button>Compre agora</button></a>
+      </div>
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/-u9TtsNtEJY?si=tPsiyHh8x2dLReb1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Dark Souls</h2>
+        <p>
+          Uma série conhecida por sua dificuldade e atmosfera sombria, com um
+          combate profundo e gratificante.
+        </p>
+        <p class="risk">R$ 50,99</p>
+        <h2>R$ 40,99</h2>
+        <p>em 2x R$ 20,49</p>
+        <a href="moss.html"><button>Compre agora</button></a>
+      </div>
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/FXyldfVAF9A?si=dY0kEWC53mFIyxzC"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Baldur's Gate 3</h2>
+        <p>
+          Um RPG baseado no sistema de regras de Dungeons & Dragons, com uma
+          história rica e um mundo aberto.
+        </p>
+        <p class="risk">R$ 70,99</p>
+        <h2>R$ 60,99</h2>
+        <p>em 2x R$ 30,49</p>
+        <a href="moss.html"><button>Compre agora</button></a>
+      </div>
+      <!-- Você pode adicionar quantos cards quiser -->
+    </div>
+    <!-- 4° TÓPICO -->
+    <hr id="4" />
+    <div class="container">
+      <!-- Cada div com a classe "card" será um card individual -->
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/nl7pRkUHd7I?si=D6yNhL4mOiHMSkut"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Resident Evil</h2>
+        <p>
+          Uma das franquias de terror mais antigas e populares, com zumbis,
+          monstros e uma atmosfera tensa.
+        </p>
+        <p class="risk">R$ 210,99</p>
+        <h2>R$ 190,99</h2>
+        <p>em 2x R$ 95,49</p>
+        <a href="mp5.html"><button>Compre agora</button></a>
+      </div>
+      <div class="card">
+        <iframe
+          width="560"
+          height="215"
+          src="https://www.youtube.com/embed/b2OK2ECCtqw?si=_iDeL6fV-0T93cqv"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Silent Hill 2</h2>
+        <p>
+          Uma série conhecida por sua atmosfera opressiva e elementos
+          psicológicos.
+        </p>
+        <p class="risk">R$ 400,99</p>
+        <h2>R$ 349,99</h2>
+        <p>em 2x R$ 174,49</p>
+        <a href="mg42.html"><button>Compre agora</button></a>
+      </div>
+      <div class="container">
+        <div class="card">
+          <iframe
+            width="560"
+            height="215"
+            src="https://www.youtube.com/embed/AFGaDkFvgPY?si=fcnyOz46N_7CVw9J"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h2>Amnesia</h2>
+          <p>
+            Um jogo que explora o medo do desconhecido e a perda de memória.
+          </p>
+          <p class="risk">R$ 210,99</p>
+          <h2>R$ 190,99</h2>
+          <p>em 2x R$ 95,49</p>
+          <a href="mp5.html"><button>Compre agora</button></a>
+        </div>
+        <div class="card">
+          <iframe
+            width="560"
+            height="215"
+            src="https://www.youtube.com/embed/8YHi4-Nh6VY?si=D9llFW8nlIRTwxsE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h2>Outlast 2</h2>
+          <p>
+            Um jogo de terror em primeira pessoa onde o jogador deve escapar de
+            um asilo mental habitado por pacientes perturbados.
+          </p>
+          <p class="risk">R$ 100,99</p>
+          <h2>R$ 88,99</h2>
+          <p>em 2x R$ 44,49</p>
+          <a href="mg42.html"><button>Compre agora</button></a>
+        </div>
+      </div>
+      <!-- Você pode adicionar quantos cards quiser -->
+    </div>
+    <br />
+    <div class="center">
+      <div class="pagination">
+        <a href="loja.html" class="ss">❮</a>
+        <a href="#1" class="ss">Ação</a>
+        <a href="#2" class="ss">Indie</a>
+        <a href="#3" class="ss">RPG</a>
+        <a href="#4" class="ss">Terror</a>
+        <a href="loja2.html" class="ss">❯</a>
       </div>
     </div>
     <br />
+    <!-- rodapé -->
     <footer>
       <div class="container-footer">
+        <!-- sobre nós -->
         <div class="footer-section">
           <h4>Sobre nós</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            volutpat lorem gravida, imperdiet est in, scelerisque lectus.
-            Praesent eu tempor velit, quis ullamcorper ligula. Morbi tincidunt
-            sed ipsum id vestibulum. Nulla enim leo, iaculis vel iaculis eget,
-            vulputate vel arcu.
+            Na <b>Pay2Play</b>, acreditamos que o jogo e a diversão podem andar
+            de mãos dadas. Nossa jornada começou em 2024, onde e quando
+            percebemos a necessidade de um consumo mais consciente. Decidimos
+            criar uma marca que oferecesse materiais de jogos e de alta
+            qualidade, vendidas de forma ética e responsável.
           </p>
         </div>
+        <!-- links rápidos -->
         <div class="footer-section">
-          <h4>Links Rapidos</h4>
+          <h4>Links Rápidos</h4>
           <ul>
             <li><a href="index.html">Página principal</a></li>
             <li><a href="login.html">Login</a></li>
@@ -109,12 +411,16 @@
             <li><a href="contato.html">Contatos</a></li>
           </ul>
         </div>
+        <!-- contatos -->
         <div class="footer-section">
           <h4>Contatos</h4>
-          <p>E-mail: lucascontatopessoal@gmail.com</p>
+          <p>E-mail: Pay2Contate@gmail.com.br</p>
           <p>Telefone: (19) 99123-1453</p>
-          <p>Endereço: Senai Zerbini</p>
+          <p>
+            Endereço: Av. da Saudade, 111 - Pte. Preta, Campinas - SP, 13041-670
+          </p>
         </div>
+        <!-- social médias -->
         <div class="footer-section">
           <h4>Siga-nos</h4>
           <div class="social-links">
@@ -145,6 +451,7 @@
           </div>
         </div>
       </div>
+      <!-- copyright -->
       <div class="footer-bottom">
         <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
       </div>

@@ -1,14 +1,19 @@
 /* Estilo para o contêiner principal */
 .container {
+  margin: 10px;
   display: flex; /* Define o contêiner como um flexbox */
-  gap: 5%; /* Espaçamento entre os cards */
+  gap: 2.5%; /* Espaçamento entre os cards */
   flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
   text-align: center;
 }
 
 /* Estilo para cada card */
 .card {
-  background-image: linear-gradient(rgb(190, 79, 79), rgb(250, 255, 250));
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(162, 218, 244),
+    rgb(101, 70, 211)
+  );
   border: 3px dotted #ffffff;
   border-radius: 8px; /* Arredonda os cantos dos cards */
   padding: 20px;
@@ -16,27 +21,29 @@
   flex: 1; /* Permite que os cards cresçam igualmente */
   transition: all 1s;
 }
-.card img {
+.card img, iframe {
   transition: all 0.5s;
   border-radius: 8px; /* Arredonda os cantos dos cards */
 }
-.card img:hover {
+.card iframe:hover {
   transition: all 0.3s;
   transform: translateY(-10%);
 }
 .container:hover .card {
   transition: all 1s;
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .container .card:hover {
   opacity: 1;
 }
 /* Estilo para o título dos cards */
 .card h2 {
+  background-color: purple;
   margin-top: 0;
   font-size: 1.5em;
-  color: #543667;
+  color: white;
   margin: 0;
+  border-radius: 8px;
 }
 
 /* Estilo para o parágrafo dos cards */
@@ -45,18 +52,16 @@
   color: #3e3d43;
 }
 button {
-  background-color: rgb(190, 79, 79, 0.6);
+  transition: all 0.2s;
+  background: #fff;
   border-radius: 8px;
   width: 75%;
   height: 10%;
   font-size: 30px;
 }
 button:hover {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(244, 162, 243),
-    rgb(125, 94, 239, 0.6)
-  );
+  transition: all 0.3s;
+  background: purple;
   color: #fff;
 }
 .card .risk {
@@ -79,26 +84,13 @@ button:hover {
 }
 
 .pagination .ss:hover {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(244, 162, 243),
-    rgb(125, 94, 239, 0.6)
-  );
+  background: purple;
   color: #fff;
 }
 .center {
   text-align: center;
 }
-.fg:hover{
-  background-image: linear-gradient(
-    to bottom,
-    rgb(255, 115, 0),
-    rgb(191, 255, 0)
-  );
+.ss:hover{
   color: #fff;
-  box-shadow: 0px 6px 16px 20px rgba(255, 115, 0, 0.5);
-}
-.br:hover{
-  color: #efefef;
-  box-shadow: 0px 6px 16px 20px rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 32px 10px rgb(128, 0, 128, 0.5);
 }
