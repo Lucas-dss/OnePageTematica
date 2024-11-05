@@ -4,11 +4,7 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: auto; /*coloca o container para o meio automaticamente*/
   width: 35%;
-  background-image: linear-gradient(
-    to bottom left,
-    rgb(162, 218, 244),
-    rgb(101, 70, 211, 0.6)
-  );
+  background-image: linear-gradient(rgb(228, 219, 173), rgb(250, 255, 250));
   border: 5px ridge #ffffff;
   border-radius: 8px; /* Arredonda os cantos dos cards */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
@@ -19,16 +15,16 @@
   width: 75%;
 }
 .container-login button {
-  background: #ffffff;
+  background-image: linear-gradient(rgb(255, 213, 213), rgb(202, 243, 251));
   border-radius: 16px;
   width: 50%;
   font-size: 21px;
 }
 .container-login button:hover {
   background-image: linear-gradient(
-    to bottom left,
-    rgb(162, 218, 244),
-    rgb(101, 70, 211, 0.6)
+    to bottom right,
+    rgb(244, 162, 243),
+    rgb(125, 94, 239, 0.6)
   );
   color: #ffffff;
 }
